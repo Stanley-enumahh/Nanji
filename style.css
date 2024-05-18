@@ -1,0 +1,178 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@200;500;600;700&family=Dancing+Script&family=Fjalla+One&family=Kaushan+Script&family=Poppins:ital,wght@0,100;0,300;0,500;0,600;1,500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Bai Jamjuree', sans-serif;
+}
+
+#home-page{
+  height: 100vh;
+  width: 100%;
+  background: #fffae3;
+  display: flex;
+  flex-direction: column;
+}
+.first-banner{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+width: 100%;
+height: 190px;
+background:linear-gradient(45deg,  #ebebeb , #f0c808);
+border-bottom-right-radius: 50px ;
+box-shadow: 0 0 12px rgba(0,0,0,0.3);
+
+}
+
+.topbar{
+  margin-top: 0px;
+  height: 70px;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+.menu-toggle{
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  padding: 7px 7px;
+  border-radius: 50%;
+  /*box-shadow: 0px 0 14px rgba(0,0,0,0.2);*/
+  cursor: pointer;
+  flex-direction: column;
+  gap: 4px;
+}
+.menu-toggle:hover .bar1{
+  width: 18px;
+}
+.menu-toggle:hover .bar3{
+  width: 18px;
+}
+.bar{
+height: 3px;
+background-color: #000;
+border-radius: 3px;
+}
+.bar1{
+  width: 14px;
+  transition: .3s ease-in;
+}
+.bar2{
+width: 18px;
+}
+.bar3{
+  width: 12px;
+  transition: .3s ease-in;
+}
+.location{
+  font-size: .8rem;
+  font-weight: bold;
+  user-select: none;
+}
+.profile-img{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0px 0 14px rgba(0,0,0,0.2);
+  cursor: pointer;
+}
+.profile-img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.greetings{
+  position: absolute;
+  left: 16px;
+  top: 100px;
+  line-height: 1.6rem;
+}
+.greetings p{
+  font-size: .8rem;
+}
+
+.search-div{
+  position: absolute;
+  right: 30px;
+  padding: 1px 20px;
+  top: 175px;
+  border-radius: 17px;
+  background-color: #ebebeb;
+  box-shadow: 0 10px 12px rgba(0,0,0,0.2);
+  cursor: pointer;
+  
+}
+#search{
+  height: 30px;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  font-size: .8rem;
+  width: 0;
+  transition: .5s ease-in;
+}
+
+.search-div:hover #search{
+width: fit-content;
+}
+
+
+
+.quick-access{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  box-shadow:  0 0 13px rgba(0, 0, 0, 0.3);
+  background-color: #ebebeb;
+}
+
+.quick-access nav{
+  width: 90%;
+}
+.quick-access ul{
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  text-decoration: none;
+}
+.quick-access ul li a{
+  gap: .1rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  text-decoration: none;
+  color: rgb(35, 34, 34);
+}
+.quick-access ul li a i{
+font-size: 1rem;
+}
+.quick-access ul li a{
+  font-size: .6rem;
+  transition: .3s ease-in;
+}
+.quick-access ul li :hover{
+color: #f0c808;
+}
+
+
+/*menu*/
+.menu-body{
+  width: 100%;
+  height: 65%;
+  border-top-right-radius: 40px ;
+  border-top-left-radius: 40px ;
+
+}
