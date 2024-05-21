@@ -37,50 +37,30 @@ box-shadow: 0 0 12px rgba(0,0,0,0.3);
   align-items: center;
   z-index: 100;
 }
+.logo{
+  user-select: none;
+}
 .cart-toggle{
   display: flex;
   align-items: start;
   justify-content: center;
-  padding: 10px 10px;
+  padding: 8px 8px;
   border-radius: 50%;
   box-shadow: 0px 0 14px rgba(0,0,0,0.2);
   cursor: pointer;
   flex-direction: column;
   gap: 4px;
   transition: .5s ease-in;
-  background-color: #ebebeb;
-}
-.cart-toggle i{
-  padding: px ;
 }
 .cart-toggle:hover {
   background: #f0c808;
 }
 
 
-.location{
-  font-size: .8rem;
-  font-weight: bold;
-  user-select: none;
-}
-.profile-img{
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  overflow: hidden;
-  box-shadow: 0px 0 14px rgba(0,0,0,0.2);
-  cursor: pointer;
-}
-.profile-img img{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
 .greetings{
   position: absolute;
   left: 16px;
-  top: 100px;
+  top: 110px;
   line-height: 1.6rem;
 }
 .greetings p{
