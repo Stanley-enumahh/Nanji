@@ -37,39 +37,27 @@ box-shadow: 0 0 12px rgba(0,0,0,0.3);
   align-items: center;
   z-index: 100;
 }
-.menu-toggle{
+.cart-toggle{
   display: flex;
   align-items: start;
   justify-content: center;
-  padding: 7px 7px;
+  padding: 10px 10px;
   border-radius: 50%;
-  /*box-shadow: 0px 0 14px rgba(0,0,0,0.2);*/
+  box-shadow: 0px 0 14px rgba(0,0,0,0.2);
   cursor: pointer;
   flex-direction: column;
   gap: 4px;
+  transition: .5s ease-in;
+  background-color: #ebebeb;
 }
-.menu-toggle:hover .bar1{
-  width: 18px;
+.cart-toggle i{
+  padding: px ;
 }
-.menu-toggle:hover .bar3{
-  width: 18px;
+.cart-toggle:hover {
+  background: #f0c808;
 }
-.bar{
-height: 3px;
-background-color: #000;
-border-radius: 3px;
-}
-.bar1{
-  width: 14px;
-  transition: .3s ease-in;
-}
-.bar2{
-width: 18px;
-}
-.bar3{
-  width: 12px;
-  transition: .3s ease-in;
-}
+
+
 .location{
   font-size: .8rem;
   font-weight: bold;
@@ -174,5 +162,40 @@ color: #f0c808;
   height: 65%;
   border-top-right-radius: 40px ;
   border-top-left-radius: 40px ;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
+}
+
+.filter-section{
+  margin-top: 25px;
+  display: flex;
+  width: 95%;
+  flex-direction: row;
+  overflow-x: hidden;
+  
+}
+.filter-section .tab-box{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style: none;
+  gap: 1rem;
+  padding: 10px 0;
+  overflow-x: hidden;
+}
+.filter-btn{
+  padding: 5px 12px;
+  background-color: #ebebeb;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  cursor: pointer;
+  transition: .5s ease-in;
+  user-select: none;
+}
+.filter-btn:hover{
+background-color: #f0c808;
 }

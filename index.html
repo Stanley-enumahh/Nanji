@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <script src="main.js"></script>
+    <script src="main.js" defer></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -18,10 +18,8 @@
     <section id="home-page">
       <div class="first-banner">
         <div class="topbar">
-          <div class="menu-toggle">
-            <div class="bar bar1"></div>
-            <div class="bar bar2"></div>
-            <div class="bar bar3"></div>
+          <div class="cart-toggle">
+            <i class="fa-solid fa-cart-shopping"></i>
           </div>
           <div class="location">
             <ion-icon name="location"></ion-icon> Unizik Avenue
@@ -34,7 +32,7 @@
         <!--greetings-->
         <div class="greetings">
           <h2 class="Hey">Hey! Stanley</h2>
-          <p>Let's get our orders</p>
+          <p>Let's get your orders</p>
         </div>
 
         <!--search-->
@@ -48,7 +46,19 @@
       </div>
 
       <!--menu-->
-      <div class="menu-body"></div>
+      <div class="menu-body">
+        <div class="filter-section">
+          <ul class="tab-box">
+            <li><button type="button" class="filter-btn">All</button></li>
+            <li><button type="button" class="filter-btn">Popular</button></li>
+            <li>
+              <button type="button" class="filter-btn">Snacks</button>
+            </li>
+            <li><button type="button" class="filter-btn">Specials</button></li>
+            <li><button type="button" class="filter-btn">Africanas</button></li>
+          </ul>
+        </div>
+      </div>
 
       <!--quick access-->
 
